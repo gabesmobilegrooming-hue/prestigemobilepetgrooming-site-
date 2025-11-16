@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Rascol;Gabe;;;
+FN:Gabe Rascol
+ORG:Prestige Mobile Pet Grooming
+TEL;TYPE=CELL,VOICE:+17346959481
+EMAIL;TYPE=INTERNET:gabesmobilegrooming@gmail.com
+URL:https://www.prestigemobilepetgrooming.site/
+ADR;TYPE=WORK:;;Westland;;MI;;USA
+NOTE:Mobile pet grooming — cage-free, one-on-one care at your door.
+END:VCARD
