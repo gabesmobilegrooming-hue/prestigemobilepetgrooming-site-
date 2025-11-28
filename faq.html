@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>FAQ & Policies | Gabes Mobile Grooming</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Frequently asked questions and grooming policies for Gabes Mobile Grooming, a luxury mobile pet spa owned by Prestige Mobile Pet Grooming LLC."
+  />
+  <style>
+    :root {
+      --bg-dark: #111318;
+      --bg-card: #181b22;
+      --bg-alt: #1f242c;
+      --accent: #d4af37;
+      --accent-soft: #f3e2a9;
+      --text-main: #f5f5f7;
+      --text-muted: #a3a7b3;
+      --border-subtle: #2a2f3a;
+      --shadow-soft: 0 18px 35px rgba(0, 0, 0, 0.45);
+      --radius-lg: 18px;
+      --radius-xl: 26px;
+      --max-width: 1100px;
+    }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+      background: radial-gradient(circle at top, #262b39 0, #05060a 55%, #020308 100%);
+      color: var(--text-main);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+    .page {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 18px 18px 60px;
+    }
+    .top-bar {
+      display:flex; align-items:center; justify-content:space-between;
+      padding:10px 14px;
+      background:rgba(10,12,18,0.85);
+      border-radius:999px;
+      box-shadow:var(--shadow-soft);
+      border:1px solid rgba(255,255,255,0.05);
+      position:sticky; top:10px; z-index:20;
+      backdrop-filter:blur(12px);
+      gap:10px;
+    }
+    .brand-mark { display:flex; align-items:center; gap:10px; }
+    .brand-icon {
+      width:34px; height:34px; border-radius:999px;
+      background:radial-gradient(circle at 30% 20%, #ffffff, #d4af37 40%, #171a23 100%);
+      display:flex; align-items:center; justify-content:center;
+      box-shadow:0 12px 25px rgba(0,0,0,0.6);
+      font-size:18px; font-weight:700; color:#111;
+    }
+    .brand-text-main {
+      font-weight:700; letter-spacing:0.03em; font-size:15px;
+      text-transform:uppercase;
+    }
+    .brand-text-sub {
+      font-size:11px; text-transform:uppercase;
+      color:var(--text-muted); letter-spacing:0.12em;
+    }
+    .top-bar-right {
+      display:flex; align-items:center; gap:10px; flex-wrap:wrap;
+      justify-content:flex-end; font-size:12px;
+    }
+    .pill-muted {
+      padding:4px 10px; border-radius:999px;
+      border:1px solid rgba(255,255,255,0.05);
+      background:rgba(16,19,26,0.85); color:var(--text-muted);
+      font-size:11px;
+    }
+    .hero-cta-btn {
+      padding:6px 14px; border-radius:999px; border:none;
+      background:linear-gradient(135deg,#d4af37,#f3e2a9);
+      color:#141212; font-weight:600; font-size:13px;
+      cursor:pointer; box-shadow:0 12px 26px rgba(0,0,0,0.7);
+      display:inline-flex; align-items:center; gap:8px;
+      text-decoration:none; white-space:nowrap;
+    }
+    @media(max-width:640px){
+      .top-bar{flex-direction:column; align-items:flex-start;}
+      .top-bar-right{justify-content:space-between; width:100%;}
+    }
+    .divider {
+      margin:26px 0 14px;
+      height:1px;
+      background:linear-gradient(90deg,transparent,rgba(255,255,255,0.18),transparent);
+    }
+    h1 { font-size:26px; margin-bottom:6px; }
+    h2 { font-size:18px; margin-bottom:6px; }
+    h3 { font-size:14px; margin-bottom:4px; }
+    .section-subtitle {
+      font-size:13px; color:var(--text-muted); margin-bottom:12px;
+    }
+    .card {
+      background:var(--bg-card);
+      border-radius:var(--radius-lg);
+      padding:16px;
+      border:1px solid var(--border-subtle);
+      box-shadow:var(--shadow-soft);
+      margin-bottom:12px;
+    }
+    .qa {
+      margin-bottom:10px;
+    }
+    .qa-question {
+      font-size:13px; font-weight:600; color:var(--accent-soft);
+      margin-bottom:2px;
+    }
+    .qa-answer {
+      font-size:13px; color:var(--text-muted);
+    }
+    .mini-list {
+      list-style:disc; margin-left:18px; font-size:13px; color:var(--text-muted);
+    }
+    .mini-list li{margin-bottom:4px;}
+    .footer{
+      font-size:11px; color:var(--text-muted);
+      text-align:center; margin-top:22px; padding-top:10px;
+      border-top:1px solid rgba(255,255,255,0.08);
+    }
+    .footer span{color:var(--accent-soft);}
+    .link-underline{
+      text-decoration:underline;
+      text-decoration-style:dotted;
+      text-underline-offset:3px;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="top-bar">
+      <div class="brand-mark">
+        <div class="brand-icon">G</div>
+        <div>
+          <div class="brand-text-main">Gabes Mobile Grooming</div>
+          <div class="brand-text-sub">Prestige Mobile Pet Grooming LLC</div>
+        </div>
+      </div>
+      <div class="top-bar-right">
+        <div class="pill-muted">FAQ & Grooming Policies</div>
+        <a href="index.html" class="hero-cta-btn">← Back to Main Site</a>
+      </div>
+    </header>
+
+    <div class="divider"></div>
+    <h1>Frequently Asked Questions</h1>
+    <p class="section-subtitle">
+      A quick guide to how our mobile spa works, what to expect, and the policies that
+      help keep every visit safe and stress-free for your pets.
+    </p>
+
+    <section class="card">
+      <h2>General Questions</h2>
+
+      <div class="qa">
+        <div class="qa-question">Which areas do you serve?</div>
+        <div class="qa-answer">
+          We serve most of the Metro Detroit area within roughly a 50-mile radius, including
+          Detroit, Dearborn, Dearborn Heights, Livonia, Westland, Canton, Novi, Northville,
+          Southfield, Farmington/Farmington Hills, Warren, Sterling Heights, Troy, Royal Oak,
+          and surrounding cities. When you contact us, we’ll confirm if your exact address is
+          within our route.
+        </div>
+      </div>
+
+      <div class="qa">
+        <div class="qa-question">How does mobile grooming work?</div>
+        <div class="qa-answer">
+          We drive our fully equipped mobile grooming spa directly to your home. Your pet is
+          groomed one-on-one in our climate-controlled salon right outside your door. Once we
+          arrive, we’ll meet your pet, discuss their needs, and then take them to the van for
+          their appointment. When finished, we return them to you clean, styled, and happy.
+        </div>
+      </div>
+
+      <div class="qa">
+        <div class="qa-question">How long does an appointment take?</div>
+        <div class="qa-answer">
+          Most grooms take between 1–2 hours per pet, depending on size, coat condition,
+          behavior, and type of service. Heavily matted coats or special-care pets may take
+          longer. We’ll give you a time estimate after we meet your pet and see their coat.
+        </div>
+      </div>
+
+      <div class="qa">
+        <div class="qa-question">Do you groom both dogs and cats?</div>
+        <div class="qa-answer">
+          Yes. We groom both dogs and cats and take extra care to keep feline appointments calm
+          and quiet. If you have both in the same home, we can often schedule them back-to-back
+          during the same visit when our route allows.
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Pricing & Payments</h2>
+
+      <div class="qa">
+        <div class="qa-question">How is pricing determined?</div>
+        <div class="qa-answer">
+          Our pricing is based on your pet’s size, coat type, coat condition, behavior, and the
+          time required. We use Standard, Premium, and Platinum packages with weight-based
+          pricing. For full details, please see our
+          <a href="pricing.html" class="link-underline">pricing & services chart</a>.
+        </div>
+      </div>
+
+      <div class="qa">
+        <div class="qa-question">Do prices ever change from what is listed online?</div>
+        <div class="qa-answer">
+          Online prices are a helpful guide, but final totals may be higher or lower depending
+          on factors such as matting, extra undercoat, severe shedding, difficult behavior, or
+          special handling needs. Any additional charges are always based on time, difficulty,
+          and groomer discretion and will be discussed with you whenever possible.
+        </div>
+      </div>
+
+      <div class="qa">
+        <div class="qa-question">What forms of payment do you accept?</div>
+        <div class="qa-answer">
+          Payment methods can vary by route and day. When you book, we’ll let you know which
+          payment options are available (for example, cash, card, or digital payments). Full
+          payment is due at the end of your appointment unless otherwise arranged.
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Behavior, Health & Safety</h2>
+
+      <div class="qa">
+        <div class="qa-question">What if my pet is anxious, senior, or has special needs?</div>
+        <div class="qa-answer">
+          Many of our clients are seniors, rescues, or pets who do better one-on-one than in a
+          busy salon. We move at your pet’s pace and keep the environment as calm as possible.
+          Please share any health concerns or limitations when you book so we can plan extra
+          time and choose the safest approach.
+        </div>
+      </div>
+
+      <div class="qa">
+        <div class="qa-question">Do you groom aggressive pets?</div>
+        <div class="qa-answer">
+          Mild fear or nervousness is common and usually manageable. However, pets that show
+          signs of aggression, require a muzzle, cannot stand on their own for more than
+          10 minutes, or have a history of seizures or severe anxiety may be charged an
+          additional handling fee or may not be candidates for our services. Safety for your
+          pet and the groomer always comes first.
+        </div>
+      </div>
+
+      <div class="qa">
+        <div class="qa-question">Will you sedate my pet?</div>
+        <div class="qa-answer">
+          No. We do not administer any sedatives or medications. If your pet requires
+          sedation for grooming, this must be done under veterinary supervision before the
+          appointment, and we must be informed in advance.
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Policies & Cancellations</h2>
+
+      <ul class="mini-list">
+        <li><strong>Arrival window:</strong> Because we travel between homes, minor delays due
+          to traffic or weather are possible. We provide an estimated time window and will
+          contact you if we are significantly ahead of or behind schedule.</li>
+        <li><strong>Cancellations & reschedules:</strong> We kindly ask for advance notice if
+          you need to cancel or reschedule so we can offer the time to another client. Late
+          cancellations or no-shows may be subject to a fee at the groomer’s discretion.</li>
+        <li><strong>Matting & shave-downs:</strong> Severe matting can be painful for pets and
+          dangerous to remove with only brushes and combs. In these cases, a short cut or
+          shave-down may be the safest option. Your pet’s comfort and skin health will always
+          come before length or style.</li>
+        <li><strong>Weather & equipment:</strong> In extreme heat, cold, or unsafe road
+          conditions, appointments may need to be adjusted for the safety of pets, staff, and
+          equipment. We will always communicate with you as early as possible if a route needs
+          to change.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Still Have Questions?</h2>
+      <p style="font-size:13px; color:var(--text-muted);">
+        If you have a question that isn’t answered here, we’re happy to help. The best way to
+        reach us is by phone or text at <strong>(734) 695-9481</strong>. You can also start by
+        reviewing our <a href="pricing.html" class="link-underline">full pricing chart</a> and
+        then contacting us with your pet’s details for a customized quote.
+      </p>
+    </section>
+
+    <footer class="footer">
+      <div>
+        © 2025 <span>Gabes Mobile Grooming</span>. A
+        <span>Prestige Mobile Pet Grooming LLC</span> company. All policies are subject to
+        change and will be confirmed during booking.
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
