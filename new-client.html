@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>New Client Application | Gabes Mobile Grooming</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="New client application form for Gabes Mobile Grooming, a luxury mobile pet spa serving the Metro Detroit area."
+  />
+  <style>
+    :root {
+      --bg-dark: #111318;
+      --bg-card: #181b22;
+      --bg-alt: #1f242c;
+      --accent: #d4af37;
+      --accent-soft: #f3e2a9;
+      --text-main: #f5f5f7;
+      --text-muted: #a3a7b3;
+      --border-subtle: #2a2f3a;
+      --shadow-soft: 0 18px 35px rgba(0, 0, 0, 0.45);
+      --radius-lg: 18px;
+      --radius-xl: 26px;
+      --max-width: 1100px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0;}
+    body{
+      font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      background:radial-gradient(circle at top,#262b39 0,#05060a 55%,#020308 100%);
+      color:var(--text-main);line-height:1.6;-webkit-font-smoothing:antialiased;
+    }
+    a{color:inherit;text-decoration:none;}
+    .page{max-width:var(--max-width);margin:0 auto;padding:18px 18px 60px;}
+    .top-bar{
+      display:flex;align-items:center;justify-content:space-between;
+      padding:10px 14px;background:rgba(10,12,18,0.85);
+      border-radius:999px;box-shadow:var(--shadow-soft);
+      border:1px solid rgba(255,255,255,0.05);position:sticky;top:10px;z-index:20;
+      backdrop-filter:blur(12px);gap:10px;
+    }
+    .brand-mark{display:flex;align-items:center;gap:10px;}
+    .brand-icon{
+      width:34px;height:34px;border-radius:999px;
+      background:radial-gradient(circle at 30% 20%,#ffffff,#d4af37 40%,#171a23 100%);
+      display:flex;align-items:center;justify-content:center;
+      box-shadow:0 12px 25px rgba(0,0,0,0.6);
+      font-size:18px;font-weight:700;color:#111;
+    }
+    .brand-text-main{font-weight:700;letter-spacing:0.03em;font-size:15px;text-transform:uppercase;}
+    .brand-text-sub{font-size:11px;text-transform:uppercase;color:var(--text-muted);letter-spacing:0.12em;}
+    .top-bar-right{display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:flex-end;font-size:12px;}
+    .pill-muted{
+      padding:4px 10px;border-radius:999px;
+      border:1px solid rgba(255,255,255,0.05);
+      background:rgba(16,19,26,0.85);color:var(--text-muted);font-size:11px;
+    }
+    .hero-cta-btn{
+      padding:6px 14px;border-radius:999px;border:none;
+      background:linear-gradient(135deg,#d4af37,#f3e2a9);
+      color:#141212;font-weight:600;font-size:13px;cursor:pointer;
+      box-shadow:0 12px 26px rgba(0,0,0,0.7);
+      display:inline-flex;align-items:center;gap:8px;text-decoration:none;
+    }
+    @media(max-width:640px){
+      .top-bar{flex-direction:column;align-items:flex-start;}
+      .top-bar-right{justify-content:space-between;width:100%;}
+    }
+    .divider{
+      margin:26px 0 14px;height:1px;
+      background:linear-gradient(90deg,transparent,rgba(255,255,255,0.18),transparent);
+    }
+    h1{font-size:26px;margin-bottom:6px;}
+    .section-subtitle{font-size:13px;color:var(--text-muted);margin-bottom:12px;}
+    .card{
+      background:var(--bg-card);
+      border-radius:var(--radius-lg);
+      padding:16px;
+      border:1px solid var(--border-subtle);
+      box-shadow:var(--shadow-soft);
+      margin-bottom:12px;
+    }
+    form{display:grid;gap:10px;}
+    .field-group{display:grid;gap:4px;}
+    label{font-size:12px;color:var(--accent-soft);}
+    input,select,textarea{
+      background:var(--bg-alt);border-radius:10px;border:1px solid var(--border-subtle);
+      padding:7px 9px;font-size:13px;color:var(--text-main);
+    }
+    textarea{min-height:80px;resize:vertical;}
+    .hint{font-size:11px;color:var(--text-muted);}
+    .two-col{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;}
+    @media(max-width:740px){.two-col{grid-template-columns:1fr;}}
+    .submit-note{font-size:12px;color:var(--text-muted);margin-top:6px;}
+    .footer{
+      font-size:11px;color:var(--text-muted);text-align:center;
+      margin-top:22px;padding-top:10px;border-top:1px solid rgba(255,255,255,0.08);
+    }
+    .footer span{color:var(--accent-soft);}
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="top-bar">
+      <div class="brand-mark">
+        <div class="brand-icon">G</div>
+        <div>
+          <div class="brand-text-main">Gabes Mobile Grooming</div>
+          <div class="brand-text-sub">Prestige Mobile Pet Grooming LLC</div>
+        </div>
+      </div>
+      <div class="top-bar-right">
+        <div class="pill-muted">New Client Application</div>
+        <a href="index.html" class="hero-cta-btn">← Back to Main Site</a>
+      </div>
+    </header>
+
+    <div class="divider"></div>
+    <h1>New Client Application</h1>
+    <p class="section-subtitle">
+      Please complete the information below so we can learn about your pet(s) and confirm
+      if you are within our Metro Detroit service area. Submitting this form does not
+      guarantee an appointment — we will follow up to review availability and pricing.
+    </p>
+
+    <section class="card">
+      <!-- This form is for display/printing; you can later connect it to a real form service if you want -->
+      <form action="#">
+        <div class="two-col">
+          <div class="field-group">
+            <label for="owner-name">Your Name</label>
+            <input id="owner-name" type="text" placeholder="First & Last Name" />
+          </div>
+          <div class="field-group">
+            <label for="owner-phone">Phone Number</label>
+            <input id="owner-phone" type="tel" placeholder="Best number for calls/texts" />
+          </div>
+        </div>
+
+        <div class="two-col">
+          <div class="field-group">
+            <label for="owner-email">Email (optional)</label>
+            <input id="owner-email" type="email" placeholder="Email, if you prefer" />
+          </div>
+          <div class="field-group">
+            <label for="city">City / Area</label>
+            <input id="city" type="text" placeholder="City & nearest major cross streets" />
+          </div>
+        </div>
+
+        <div class="field-group">
+          <label for="preferred-days">Preferred Days & Times</label>
+          <input id="preferred-days" type="text" placeholder="Example: Weekdays after 3 PM, Saturdays, etc." />
+        </div>
+
+        <div class="divider" style="margin:14px 0;"></div>
+
+        <div class="field-group">
+          <label>Number of Pets to Be Groomed</label>
+          <select>
+            <option>1 Pet</option>
+            <option>2 Pets</option>
+            <option>3 Pets</option>
+            <option>4+ Pets</option>
+          </select>
+        </div>
+
+        <div class="field-group">
+          <label for="pet-details">Pet Details</label>
+          <textarea id="pet-details" placeholder="For each pet, please include: name, dog or cat, breed, age, approximate weight, coat length (short/medium/long/double coat)."></textarea>
+        </div>
+
+        <div class="field-group">
+          <label for="service-type">Requested Service(s)</label>
+          <textarea id="service-type" placeholder="Example: Full groom with haircut, bath & brush only, deshedding, lion cut for cat, nail trim only, etc."></textarea>
+        </div>
+
+        <div class="field-group">
+          <label for="coat-history">Coat Condition & Grooming History</label>
+          <textarea id="coat-history" placeholder="How often does your pet usually get groomed? Any matting, heavy shedding, or previous shave-downs?"></textarea>
+        </div>
+
+        <div class="field-group">
+          <label for="behavior-notes">Behavior & Special Needs</label>
+          <textarea id="behavior-notes" placeholder="Please mention if your pet is nervous, has ever snapped or bitten, requires a muzzle, is senior, has mobility issues, seizures, or any medical concerns. The more we know, the safer we can make the visit."></textarea>
+        </div>
+
+        <div class="field-group">
+          <label for="vet-info">Veterinarian & Emergency Contact (optional)</label>
+          <textarea id="vet-info" placeholder="Vet clinic name & phone number, plus an emergency contact if different from you."></textarea>
+        </div>
+
+        <div class="field-group">
+          <label for="extra-notes">Anything Else You’d Like Us to Know?</label>
+          <textarea id="extra-notes" placeholder="Scheduling notes, parking details, gate codes, or special requests."></textarea>
+        </div>
+
+        <div class="submit-note">
+          This online form is for your convenience. You may also text this information to us directly at
+          <strong>(734) 695-9481</strong> if that is easier for you.
+        </div>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <div>
+        © 2025 <span>Gabes Mobile Grooming</span>. A
+        <span>Prestige Mobile Pet Grooming LLC</span> company. Submitting this form does
+        not confirm an appointment until we respond and schedule your visit.
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
