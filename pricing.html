@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pricing & Mobile Spa Services | Gabes Mobile Grooming</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Detailed pricing and mobile salon services for Gabes Mobile Grooming, owned and operated by Prestige Mobile Pet Grooming LLC."
+  />
+  <style>
+    :root {
+      --bg: #ffe6f0;
+      --text-main: #333036;
+      --text-muted: #6a6670;
+      --accent: #d72f6c;
+      --accent-soft: #f7b5cf;
+      --table-border: #f2c9d9;
+      --font: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text-main);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .page {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 24px 18px 60px;
+    }
+
+    /* Header / top bar */
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 14px;
+      padding: 10px 16px;
+      border-radius: 999px;
+      border: 1px solid #f3c7da;
+      background: #ffeef6;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+      margin-bottom: 26px;
+    }
+
+    .brand-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .brand-icon {
+      width: 34px;
+      height: 34px;
+      border-radius: 999px;
+      background: radial-gradient(circle at 30% 20%, #ffffff, #ffc1dd 35%, #d72f6c 85%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      color: #3d1022;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .brand-text-main {
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+
+    .brand-text-sub {
+      font-size: 11px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      letter-spacing: 0.12em;
+    }
+
+    .top-bar-right {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      justify-content: flex-end;
+      font-size: 12px;
+    }
+
+    .pill-muted {
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid #f3c7da;
+      background: #ffeef6;
+      color: var(--text-muted);
+    }
+
+    .cta-link {
+      padding: 6px 14px;
+      border-radius: 999px;
+      border: none;
+      background: linear-gradient(135deg, #d72f6c, #ff98c7);
+      color: white;
+      font-weight: 600;
+      font-size: 13px;
+      cursor: pointer;
+      box-shadow: 0 10px 20px rgba(215, 47, 108, 0.4);
+      white-space: nowrap;
+    }
+
+    @media (max-width: 650px) {
+      .top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .top-bar-right {
+        justify-content: space-between;
+        width: 100%;
+      }
+    }
+
+    /* Shared section styles */
+    section {
+      margin-top: 30px;
+    }
+
+    h1, h2, h3 {
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: 26px;
+      text-align: center;
+      margin-bottom: 6px;
+    }
+
+    h2 {
+      font-size: 18px;
+      margin-bottom: 6px;
+      margin-top: 6px;
+    }
+
+    h3 {
+      font-size: 15px;
+      margin-bottom: 4px;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+    }
+
+    .section-sub {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+
+    ul.service-list {
+      margin-left: 18px;
+      font-size: 13px;
+      max-width: 1050px;
+    }
+
+    ul.service-list li {
+      margin-bottom: 4px;
+    }
+
+    ul.service-list strong {
+      font-weight: 700;
+    }
+
+    /* Tables */
+    .table-wrap {
+      margin-top: 14px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+
+    th, td {
+      padding: 7px 10px;
+      border-bottom: 1px solid var(--table-border);
+      text-align: left;
+    }
+
+    th {
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    .col-center {
+      text-align: center;
+    }
+
+    .note {
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-top: 6px;
+    }
+
+    .emphasis {
+      font-weight: 600;
+    }
+
+    .x-cell {
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .price {
+      white-space: nowrap;
+    }
+
+    /* Layout helpers */
+    .two-col {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: 26px;
+    }
+
+    @media (max-width: 800px) {
+      .two-col {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .card {
+      background: #ffeef6;
+      border-radius: 16px;
+      border: 1px solid #f3c7da;
+      padding: 16px 16px 12px;
+      box-shadow: 0 12px 20px rgba(0,0,0,0.03);
+    }
+
+    .footer {
+      margin-top: 32px;
+      padding-top: 12px;
+      border-top: 1px solid #f3c7da;
+      font-size: 11px;
+      color: var(--text-muted);
+      text-align: center;
+    }
+
+    .footer span {
+      color: var(--accent);
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <!-- Top bar -->
+    <header class="top-bar">
+      <div class="brand-group">
+        <div class="brand-icon">G</div>
+        <div>
+          <div class="brand-text-main">Gabes Mobile Grooming</div>
+          <div class="brand-text-sub">Prestige Mobile Pet Grooming LLC</div>
+        </div>
+      </div>
+      <div class="top-bar-right">
+        <div class="pill-muted">Pricing & Mobile Spa Services</div>
+        <a class="cta-link" href="index.html">← Back to Main Site</a>
+      </div>
+    </header>
+
+    <!-- Main title -->
+    <h1>Pricing & Mobile Spa Services</h1>
+    <div class="subtitle">
+      Services and package pricing for dogs and cats. Final quotes are based on coat condition, size, and behavior.
+    </div>
+
+    <!-- SERVICES BULLET LIST -->
+    <section>
+      <h2>Core Spa Services</h2>
+      <p class="section-sub">
+        Every full-service appointment includes a customized mix of the services below, adjusted for each dog or cat.
+      </p>
+      <ul class="service-list">
+        <li><strong>Hydro-massage bath</strong> – Warm water circulates around the body to deep clean the coat and help support healthy skin and blood flow.</li>
+        <li><strong>Specialty shampoo</strong> – A variety of professional shampoos chosen for your pet’s specific coat and skin needs.</li>
+        <li><strong>Specialty conditioner &amp; de-shedding treatment</strong> – For double-coated breeds we include a premium de-shedding treatment to help dramatically reduce loose undercoat.</li>
+        <li><strong>Hand dry &amp; blow dry</strong> – Hand dryers only; we do not use cage dryers. Coats are dried fully to help prevent matting and keep your pet comfortable.</li>
+        <li><strong>Thorough brushing</strong> – Removes tangles, loose hair, and surface debris while stimulating circulation and promoting a healthy coat.</li>
+        <li><strong>Ear cleaning</strong> – Gently cleans the ears to help reduce buildup that can lead to irritation.</li>
+        <li><strong>Nail trim</strong> – Nails are cut to an appropriate length to keep your pet walking comfortably.</li>
+        <li><strong>Nail grind (where suitable)</strong> – Nails are smoothed with a grinder to round any sharp edges.</li>
+        <li><strong>Foot &amp; pad trim</strong> – Excess hair on and around the feet is trimmed for a tidy, safe finish.</li>
+        <li><strong>Paw pad shave</strong> – Helps keep pads clean and reduces slipping on smooth floors.</li>
+        <li><strong>Nose &amp; paw balm</strong> – Moisturizing balm is applied to help soothe and protect delicate skin on the nose and paw pads.</li>
+        <li><strong>Teeth brushing</strong> – Light cosmetic brushing to help freshen breath and support oral care between vet cleanings.</li>
+        <li><strong>Body trim / haircut</strong> – Coat is trimmed or styled as requested for comfort, maintenance, or a specific look (breed or custom style).</li>
+      </ul>
+    </section>
+
+    <!-- PACKAGES -->
+    <section>
+      <h2>Dog Packages</h2>
+      <p class="section-sub">
+        Dog packages are built around three levels: <span class="emphasis">Standard</span>,
+        <span class="emphasis">Premium</span>, and <span class="emphasis">Platinum</span>.
+      </p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Dog Package Services</th>
+              <th class="col-center">Standard</th>
+              <th class="col-center">Premium</th>
+              <th class="col-center">Platinum</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Pre-rinse &amp; warm hydro bath</td>
+              <td class="x-cell">X</td>
+              <td class="x-cell">X</td>
+              <td class="x-cell">X</td>
+            </tr>
+            <tr>
+              <td>Premium shampoo</td>
+              <td class="x-cell">X</td>
+              <td class="x-cell">X</td>
+              <td class="x-cell">X</td>
+            </tr>
+            <tr>
+              <td>Massage with hydro-recirculating system</td>
+              <td class="x-cell">X</td>
+              <td class="x-cell">X</td>
+              <td class="x-cell">X</td>
+            </tr>
+            <tr>
+              <td>Premium conditioner / de-shedding treatment</td>
+              <td class="x-cell">X</td>
+              <td class="x-cell">X</td>
+              <td class="x-cell">X</td>
+            </tr>
+            <tr>
+              <td>Towel / hand dry &amp; blow dry</td>
+              <td class="x-cell">X</td>
+              <td class="x-cell">X</td>
+              <td class="x-cell">X</td>
+            </tr>
+            <tr>
+              <td>Brush out (15 minutes)</td>
+              <td class="x-cell">X</td>
+              <td class="x-cell">X</td>
+              <td class="x-cell">X</td>
+            </tr>
+            <tr>
+              <td>Trim nails</td>
+              <td class="x-cell">X</td>
+              <td class="x-cell">X</td>
+              <td class="x-cell">X</td>
+            </tr>
+            <tr>
+              <td>Shave paw pads</td>
+              <td></td>
+              <td class="x-cell">X</td>
+              <td class="x-cell">X</td>
+            </tr>
+            <tr>
+              <td>Trim feet</td>
+              <td></td>
+              <td class="x-cell">X</td>
+              <td class="x-cell">X</td>
+            </tr>
+            <tr>
+              <td>Grind nails (when appropriate)</td>
+              <td></td>
+              <td class="x-cell">X</td>
+              <td class="x-cell">X</td>
+            </tr>
+            <tr>
+              <td>Clean ears</td>
+              <td class="x-cell">X</td>
+              <td class="x-cell">X</td>
+              <td class="x-cell">X</td>
+            </tr>
+            <tr>
+              <td>Brush teeth</td>
+              <td></td>
+              <td></td>
+              <td class="x-cell">X</td>
+            </tr>
+            <tr>
+              <td>Nose &amp; paw balm</td>
+              <td></td>
+              <td></td>
+              <td class="x-cell">X</td>
+            </tr>
+            <tr>
+              <td>Sanitary trim (if applicable)</td>
+              <td></td>
+              <td class="x-cell">X</td>
+              <td class="x-cell">X</td>
+            </tr>
+            <tr>
+              <td>Bright white shampoo (if applicable)</td>
+              <td></td>
+              <td class="x-cell">X</td>
+              <td class="x-cell">X</td>
+            </tr>
+            <tr>
+              <td>Body cut / trim (if applicable)</td>
+              <td></td>
+              <td class="x-cell">X</td>
+              <td class="x-cell">X</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>Cat Packages</h2>
+      <p class="section-sub">
+        Cat packages follow the same three levels with services adjusted for feline comfort and safety.
+      </p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Cat Package Services</th>
+              <th class="col-center">Standard</th>
+              <th class="col-center">Premium</th>
+              <th class="col-center">Platinum</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Brush out (15 minutes)</td>
+              <td class="x-cell">X</td>
+              <td class="x-cell">X</td>
+              <td class="x-cell">X</td>
+            </tr>
+            <tr>
+              <td>Clip nails</td>
+              <td class="x-cell">X</td>
+              <td class="x-cell">X</td>
+              <td class="x-cell">X</td>
+            </tr>
+            <tr>
+              <td>Clean ears</td>
+              <td class="x-cell">X</td>
+              <td class="x-cell">X</td>
+              <td class="x-cell">X</td>
+            </tr>
+            <tr>
+              <td>Dry shampoo / waterless bath (if applicable)</td>
+              <td class="x-cell">X</td>
+              <td class="x-cell">X</td>
+              <td class="x-cell">X</td>
+            </tr>
+            <tr>
+              <td>Massage with hydro-recirculating system</td>
+              <td></td>
+              <td class="x-cell">X</td>
+              <td class="x-cell">X</td>
+            </tr>
+            <tr>
+              <td>Premium conditioner</td>
+              <td></td>
+              <td class="x-cell">X</td>
+              <td class="x-cell">X</td>
+            </tr>
+            <tr>
+              <td>Towel / hand dry</td>
+              <td></td>
+              <td class="x-cell">X</td>
+              <td class="x-cell">X</td>
+            </tr>
+            <tr>
+              <td>Sanitary trim</td>
+              <td></td>
+              <td class="x-cell">X</td>
+              <td class="x-cell">X</td>
+            </tr>
+            <tr>
+              <td>Shave pads (if needed)</td>
+              <td></td>
+              <td></td>
+              <td class="x-cell">X</td>
+            </tr>
+            <tr>
+              <td>Brush teeth</td>
+              <td></td>
+              <td></td>
+              <td class="x-cell">X</td>
+            </tr>
+            <tr>
+              <td>Nose &amp; paw balm</td>
+              <td></td>
+              <td></td>
+              <td class="x-cell">X</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- DOG PRICING TABLES -->
+    <section>
+      <h2>Dog Short Hair Breeds Pricing</h2>
+      <p class="section-sub">
+        For breeds such as Pitbulls, Boxers, Bulldogs, Beagles, Great Danes, etc.
+      </p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Weight</th>
+              <th class="col-center">Standard</th>
+              <th class="col-center">Premium</th>
+              <th class="col-center">Platinum</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>0–15 lbs.</td><td class="col-center price">$105.00</td><td class="col-center price">$116.00</td><td class="col-center price">$132.00</td></tr>
+            <tr><td>16–25 lbs.</td><td class="col-center price">$111.00</td><td class="col-center price">$121.00</td><td class="col-center price">$137.00</td></tr>
+            <tr><td>26–40 lbs.</td><td class="col-center price">$116.00</td><td class="col-center price">$126.00</td><td class="col-center price">$142.00</td></tr>
+            <tr><td>41–60 lbs.</td><td class="col-center price">$126.00</td><td class="col-center price">$137.00</td><td class="col-center price">$153.00</td></tr>
+            <tr><td>61–80 lbs.</td><td class="col-center price">$137.00</td><td class="col-center price">$147.00</td><td class="col-center price">$163.00</td></tr>
+            <tr><td>81–99 lbs.</td><td class="col-center price">$147.00</td><td class="col-center price">$158.00</td><td class="col-center price">$174.00</td></tr>
+            <tr><td>100–120 lbs.</td><td class="col-center price">$158.00</td><td class="col-center price">$168.00</td><td class="col-center price">$184.00</td></tr>
+            <tr><td>121–140 lbs.</td><td class="col-center price">$179.00</td><td class="col-center price">$189.00</td><td class="col-center price">$205.00</td></tr>
+            <tr><td>141–160 lbs.</td><td class="col-center price">$200.00</td><td class="col-center price">$210.00</td><td class="col-center price">$226.00</td></tr>
+            <tr><td>161–180 lbs.</td><td class="col-center price">$221.00</td><td class="col-center price">$231.00</td><td class="col-center price">$247.00</td></tr>
+            <tr><td>181–199 lbs.</td><td class="col-center price">$231.00</td><td class="col-center price">$242.00</td><td class="col-center price">$258.00</td></tr>
+            <tr><td>200–225 lbs.</td><td class="col-center price">$242.00</td><td class="col-center price">$252.00</td><td class="col-center price">$268.00</td></tr>
+            <tr><td>226–249 lbs.</td><td class="col-center price">$252.00</td><td class="col-center price">$263.00</td><td class="col-center price">$279.00</td></tr>
+            <tr><td>250+ lbs.</td><td class="col-center price">$263.00</td><td class="col-center price">$273.00</td><td class="col-center price">$289.00</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>Dog Double Coat Short Hair Breeds Pricing</h2>
+      <p class="section-sub">
+        For breeds such as Labrador Retrievers, Pugs, and other double-coated short hair dogs.
+      </p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Weight</th>
+              <th class="col-center">Standard</th>
+              <th class="col-center">Premium</th>
+              <th class="col-center">Platinum</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>0–15 lbs.</td><td class="col-center price">$105.00</td><td class="col-center price">$121.00</td><td class="col-center price">$137.00</td></tr>
+            <tr><td>16–25 lbs.</td><td class="col-center price">$111.00</td><td class="col-center price">$126.00</td><td class="col-center price">$142.00</td></tr>
+            <tr><td>26–40 lbs.</td><td class="col-center price">$121.00</td><td class="col-center price">$137.00</td><td class="col-center price">$153.00</td></tr>
+            <tr><td>41–60 lbs.</td><td class="col-center price">$132.00</td><td class="col-center price">$147.00</td><td class="col-center price">$163.00</td></tr>
+            <tr><td>61–80 lbs.</td><td class="col-center price">$142.00</td><td class="col-center price">$158.00</td><td class="col-center price">$174.00</td></tr>
+            <tr><td>81–99 lbs.</td><td class="col-center price">$153.00</td><td class="col-center price">$168.00</td><td class="col-center price">$184.00</td></tr>
+            <tr><td>100–120 lbs.</td><td class="col-center price">$158.00</td><td class="col-center price">$168.00</td><td class="col-center price">$184.00</td></tr>
+            <tr><td>121–140 lbs.</td><td class="col-center price">$179.00</td><td class="col-center price">$189.00</td><td class="col-center price">$205.00</td></tr>
+            <tr><td>141–160 lbs.</td><td class="col-center price">$200.00</td><td class="col-center price">$210.00</td><td class="col-center price">$226.00</td></tr>
+            <tr><td>161–180 lbs.</td><td class="col-center price">$221.00</td><td class="col-center price">$231.00</td><td class="col-center price">$247.00</td></tr>
+            <tr><td>181–199 lbs.</td><td class="col-center price">$231.00</td><td class="col-center price">$242.00</td><td class="col-center price">$258.00</td></tr>
+            <tr><td>200–225 lbs.</td><td class="col-center price">$242.00</td><td class="col-center price">$252.00</td><td class="col-center price">$268.00</td></tr>
+            <tr><td>226–249 lbs.</td><td class="col-center price">$252.00</td><td class="col-center price">$263.00</td><td class="col-center price">$279.00</td></tr>
+            <tr><td>250+ lbs.</td><td class="col-center price">$263.00</td><td class="col-center price">$273.00</td><td class="col-center price">$289.00</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>Dog Long Hair Breeds Pricing</h2>
+      <p class="section-sub">
+        For doodles, Rough Collies, Great Pyrenees, Yorkies, Shih Tzus, Golden Retrievers, and other long-coated breeds.
+      </p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Weight</th>
+              <th class="col-center">Standard</th>
+              <th class="col-center">Premium</th>
+              <th class="col-center">Platinum</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>0–15 lbs.</td><td class="col-center price">$111.00</td><td class="col-center price">$126.00</td><td class="col-center price">$142.00</td></tr>
+            <tr><td>16–25 lbs.</td><td class="col-center price">$121.00</td><td class="col-center price">$142.00</td><td class="col-center price">$163.00</td></tr>
+            <tr><td>26–40 lbs.</td><td class="col-center price">$132.00</td><td class="col-center price">$147.00</td><td class="col-center price">$179.00</td></tr>
+            <tr><td>41–60 lbs.</td><td class="col-center price">$137.00</td><td class="col-center price">$153.00</td><td class="col-center price">$184.00</td></tr>
+            <tr><td>61–80 lbs.</td><td class="col-center price">$142.00</td><td class="col-center price">$158.00</td><td class="col-center price">$189.00</td></tr>
+            <tr><td>81–99 lbs.</td><td class="col-center price">$158.00</td><td class="col-center price">$168.00</td><td class="col-center price">$205.00</td></tr>
+            <tr><td>100–120 lbs.</td><td class="col-center price">$200.00</td><td class="col-center price">$210.00</td><td class="col-center price">$221.00</td></tr>
+            <tr><td>121–140 lbs.</td><td class="col-center price">$210.00</td><td class="col-center price">$221.00</td><td class="col-center price">$231.00</td></tr>
+            <tr><td>141–160 lbs.</td><td class="col-center price">$221.00</td><td class="col-center price">$231.00</td><td class="col-center price">$242.00</td></tr>
+            <tr><td>161–180 lbs.</td><td class="col-center price">$231.00</td><td class="col-center price">$242.00</td><td class="col-center price">$252.00</td></tr>
+            <tr><td>181–199 lbs.</td><td class="col-center price">$242.00</td><td class="col-center price">$252.00</td><td class="col-center price">$273.00</td></tr>
+            <tr><td>200–225 lbs.</td><td class="col-center price">$252.00</td><td class="col-center price">$263.00</td><td class="col-center price">$284.00</td></tr>
+            <tr><td>226–249 lbs.</td><td class="col-center price">$263.00</td><td class="col-center price">$273.00</td><td class="col-center price">$294.00</td></tr>
+            <tr><td>250+ lbs.</td><td class="col-center price">$284.00</td><td class="col-center price">$294.00</td><td class="col-center price">$315.00</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- CAT PRICING -->
+    <section>
+      <h2>Cat Short Hair Pricing</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Weight</th>
+              <th class="col-center">Standard</th>
+              <th class="col-center">Premium</th>
+              <th class="col-center">Platinum</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>0–14 lbs.</td><td class="col-center price">$150.00</td><td class="col-center price">$165.00</td><td class="col-center price">$180.00</td></tr>
+            <tr><td>15+ lbs.</td><td class="col-center price">$160.00</td><td class="col-center price">$175.00</td><td class="col-center price">$200.00</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>Cat Long Hair Pricing</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Weight</th>
+              <th class="col-center">Standard</th>
+              <th class="col-center">Premium</th>
+              <th class="col-center">Platinum</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>0–14 lbs.</td><td class="col-center price">$165.00</td><td class="col-center price">$185.00</td><td class="col-center price">$200.00</td></tr>
+            <tr><td>15+ lbs.</td><td class="col-center price">$180.00</td><td class="col-center price">$195.00</td><td class="col-center price">$220.00</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- A LA CARTE -->
+    <section>
+      <h2>À La Carte Services</h2>
+      <p class="section-sub">
+        These items can be added to a full grooming package, or booked alone where available.
+      </p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Service</th>
+              <th class="col-center">Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Clip nails</td><td class="col-center price">$16</td></tr>
+            <tr><td>Grind nails</td><td class="col-center price">$21</td></tr>
+            <tr><td>Clean ears</td><td class="col-center price">$6</td></tr>
+            <tr><td>Brush teeth</td><td class="col-center price">$6</td></tr>
+            <tr><td>Nose &amp; paw moisturizer</td><td class="col-center price">$4</td></tr>
+            <tr><td>Shave pads</td><td class="col-center price">$16</td></tr>
+            <tr><td>Sanitary trim</td><td class="col-center price">$11</td></tr>
+            <tr><td>Trim feet</td><td class="col-center price">$21</td></tr>
+            <tr><td>Face trim</td><td class="col-center price">$11</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note">
+        <span class="emphasis">Nails-only visit:</span> if we are only coming out for nail services, the minimum charge is
+        <span class="emphasis">$53 for the first pet</span> and <span class="emphasis">$16</span> for each additional pet during the same trip.
+      </p>
+      <p class="note">
+        Pets that are aggressive, require a muzzle, cannot stand on their own for more than 10 minutes,
+        or have a history of seizures or severe anxiety may incur an additional handling fee.
+        Final charges can be higher or lower depending on behavior and coat condition at the groomer’s discretion,
+        and in some cases may not be fully known until the grooming is finished.
+      </p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div>
+        © 2025 <span>Gabes Mobile Grooming</span>. A <span>Prestige Mobile Pet Grooming LLC</span> company.
+        Prices and services are subject to change and will be confirmed at booking.
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
